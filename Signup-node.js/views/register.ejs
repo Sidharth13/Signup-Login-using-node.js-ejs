@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <a href="/" class="btn btn-lg btn-primary">Go Back</a>
+  <h1>Signup Here</h1>
+  <form method="POST" action="/register" autocomplete="off">
+    <div class="form-group">
+      <label for="exampleInputUsername1">Username</label>
+      <input
+        type="name"
+        placeholder="Enter Your Username"
+        name="username"
+        class="form-control"
+        id="exampleInputUsername1"
+        aria-describedby="usernameHelp"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputMobileNumber1">Mobile Number</label>
+      <input
+        type="number"
+        placeholder="Enter Your Mobile Number"
+        name="mobilenumber"
+        class="form-control"
+        id="exampleInputMobileNumber1"
+        aria-describedby="mobilenumberHelp"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email Address</label>
+      <input
+        type="email"
+        placeholder="Enter Your Email Address"
+        name="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        type="password"
+        placeholder="Enter Your Password"
+        name="password"
+        class="form-control"
+        id="exampleInputPassword1"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
